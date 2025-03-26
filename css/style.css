@@ -1,26 +1,123 @@
-body{
-    background-color: #e6adad;
+/* General Styles */
+body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    
-}
-header{
-    background-color: #e6d85b;
-    padding: 5px 0;
-    text-align: flex-start;
+    /* background-color: #eeabab; */
+    color: #333;
+  }
+  header {
+    background: rgb(224, 224, 119);
     color: black;
-
-}
-.container h1{
-    /* background-color: #f9d423; */
     padding: 10px 0;
     text-align: center;
-}
-nav{
-    /* background-color: #f9d423; */
-    padding: 10px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .timings {
     text-align: center;
-    display: inline-block;
-
-}
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  .timings h2 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  .timings p {
+    margin: 5px 0;
+  }
+  .timings span {
+    font-weight: bold;
+  }
+  #add-date h3 {
+    margin-bottom: 15px;
+    color: #555;
+  }
+  #patient\'s-form {
+    display: flex;
+    flex-direction: column;
+  }
+  #patient\'s-form input,
+  #patient\'s-form select,
+  #patient\'s-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  #patient\'s-form button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  #patient\'s-form button:hover {
+    background-color: #0056b3;
+  }
+  .search-billing h3 {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  #search {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .bill h3 {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  #billing {
+    list-style-type: none;
+    padding: 0;
+  }
+  #billing li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  #about {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    text-align: center;
+  }
+  #about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+  }
+  #about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 10px;
+  }
+  #about p:last-of-type {
+    margin-bottom: 0;
+  }
+  

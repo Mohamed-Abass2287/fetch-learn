@@ -10,21 +10,99 @@
 <body>
     <!-- header section -->
      <header>
+        <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
+        <style></style>
         <div class="container">
             <div id="branding">
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="current"><a href="appointment.html">Appointment</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <ul class="navbar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="Appointment">Appointment</a></li>
+                        <li><a href="Contact">Contact</a></li>
                     </ul>
                 </nav>
-                <h1><span class="highlight">Patient's</span> Appointment sheet</h1>
+                <h1><span class="highlight">Patient's</span> Appointment form</h1>
+                <h2>make your appointment today & get early treatment, welcome!</h2>
             </div>
             
         </div>
      </header>
-    
+     <main id="sheet">
+        <section class="timings">
+            <h2 id="appointment">balance: 0</h2>
+            <style>
+            h2 {
+              font-size: 1rem;
+              margin: 10px 0;
+              font-weight: normal;
+            }
+            </style>
+            <p>debt: <span id="debt">Ksh 0</span></p>
+            <p>paid: <span id="paid">Ksh 0</span></p>
+          </section>
+          <section id="add-date">
+      
+            <h3>Add a New bill</h3>
+            
+            <form id="patient's form">
+              <input type="text" id="paid" placeholder="paid" required />
+              <style>
+              input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+              }
+              </style>
+              <input type="text" id="debt" placeholder="debt" required />
+            <style>
+            input[type="number"] {
+              width: 100%;
+              padding: 10px;
+              margin: 10px 0;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+            }
+         
+            </style>
+              <select id="type">
+                <option value="paid">paid</option>
+                <style>
+                select {
+                  width: 100%;
+                  padding: 10px;
+                  margin: 10px 0;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                }
+                </style>
+                <option value="debt">debt</option>
+              </select>
+              <button type="submit">billing</button>
+            </form>
+          </section>
+          <section class="search-billing">
+            <h3>Search Billing</h3>
+            <input type="text" id="search" placeholder="Search billing..." />
+          </section>
+            
+      
+          <section class="bill">
+            <h3>billing History</h3>
+            <ul id="billing"></ul>
+          </section>
+          <section id="about">
+            <h2>About This Application</h2>
+            <p>
+              Welcome to our billing app! This platform is designed to streamline and simplify the process of managing bills. </p>
+            <p>
+              Key features include adding new bills, searching billing records, viewing billing histories, and more. Built with efficiency and user-friendliness in mind, this application empowers you to stay on top of your financial data without hassle.
+            </p>
+          </section>
+
+     </main>
+     <script src="js/index.js"></script>
 </body>
 </html>
