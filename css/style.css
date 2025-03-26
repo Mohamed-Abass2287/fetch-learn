@@ -1,0 +1,26 @@
+body{
+    background-color: #e6adad;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    background-color: #e6d85b;
+    padding: 5px 0;
+    text-align: flex-start;
+    color: black;
+
+}
+.container h1{
+    /* background-color: #f9d423; */
+    padding: 10px 0;
+    text-align: center;
+}
+nav{
+    /* background-color: #f9d423; */
+    padding: 10px 0;
+    text-align: center;
+    display: inline-block;
+
+}
