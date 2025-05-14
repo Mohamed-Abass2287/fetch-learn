@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>patient's appointment </title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 </head>
 <body>
     <!-- header section -->
@@ -28,81 +28,45 @@
             
         </div>
      </header>
-     <main id="sheet">
-        <section class="timings">
-            <h2 id="appointment">balance: 0</h2>
-            <style>
-            h2 {
-              font-size: 1rem;
-              margin: 10px 0;
-              font-weight: normal;
-            }
-            </style>
-            <p>debt: <span id="debt">Ksh 0</span></p>
-            <p>paid: <span id="paid">Ksh 0</span></p>
-          </section>
-          <section id="add-date">
-      
-            <h3>Add a New bill</h3>
-            
-            <form id="patient's form">
-              <input type="text" id="paid" placeholder="paid" required />
-              <style>
-              input[type="text"] {
-                width: 100%;
-                padding: 10px;
-                margin: 10px 0;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-              }
-              </style>
-              <input type="text" id="debt" placeholder="debt" required />
-            <style>
-            input[type="number"] {
-              width: 100%;
-              padding: 10px;
-              margin: 10px 0;
-              border: 1px solid #ccc;
-              border-radius: 5px;
-            }
-         
-            </style>
-              <select id="type">
-                <option value="paid">paid</option>
-                <style>
-                select {
-                  width: 100%;
-                  padding: 10px;
-                  margin: 10px 0;
-                  border: 1px solid #ccc;
-                  border-radius: 5px;
-                }
-                </style>
-                <option value="debt">debt</option>
-              </select>
-              <button type="submit">billing</button>
-            </form>
-          </section>
-          <section class="search-billing">
-            <h3>Search Billing</h3>
-            <input type="text" id="search" placeholder="Search billing..." />
-          </section>
-            
-      
-          <section class="bill">
-            <h3>billing History</h3>
-            <ul id="billing"></ul>
-          </section>
-          <section id="about">
-            <h2>About This Application</h2>
-            <p>
-              Welcome to our billing app! This platform is designed to streamline and simplify the process of managing bills. </p>
-            <p>
-              Key features include adding new bills, searching billing records, viewing billing histories, and more. Built with efficiency and user-friendliness in mind, this application empowers you to stay on top of your financial data without hassle.
-            </p>
-          </section>
+    <section id="about">
+    <h2>About Patient Visit</h2>
+    <p>
+        This section allows patients to provide necessary details about their visit, including health concerns, preferred appointment times, and contact information.
+    </p>
 
-     </main>
-     <script src="js/index.js"></script>
+    <h3>Patient Visit Form</h3>
+    <form id="patient-visit-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="symptoms">patient's Symptoms:</label>
+        <textarea id="symptoms" name="symptoms" placeholder="Briefly describe patient's health concerns..." rows="4" required></textarea>
+
+        <label for="visit-date">Preferred Visit Date:</label>
+        <input type="date" id="visit-date" name="visit-date" required>
+
+        <label for="time-slot">Preferred Time Slot:</label>
+
+        <!-- time slot -->
+        <select id="time-slot" name="time-slot">
+            <option value="morning">Morning (8 AM - 12 PM)</option>
+            <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+            <option value="evening">Evening (4 PM - 8 PM)</option>
+        </select>
+
+        <button type="submit">Submit Appointment Request</button>
+    </form>
+</section>
+
+     <script src="Js/script.js"></script>
 </body>
 </html>
