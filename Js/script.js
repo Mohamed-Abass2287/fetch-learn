@@ -43,7 +43,7 @@
         return emailRegex.test(email);
     }
 
-    // Validate phone number format
+    // Validate phone number format//
     function validatePhone(phone) {
         const phoneRegex = /^[0-9]{10}$/; // Assumes a 10-digit phone number format
         return phoneRegex.test(phone);
